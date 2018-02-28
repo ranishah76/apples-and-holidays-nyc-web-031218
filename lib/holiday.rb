@@ -33,7 +33,7 @@ end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
-  holiday_hash[:spring][:memorial_day] << "Prosecco"
+  holiday_hash[:spring][:memorial_day] << supply
   holiday_hash
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
@@ -50,7 +50,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-  
+
   # return an array of all of the supplies that are used in the winter season
 
 end
@@ -71,10 +71,3 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 
 end
-
-
-
-
-
-
-
