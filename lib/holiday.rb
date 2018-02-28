@@ -22,9 +22,9 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  holiday_hash[:winter].each do |holiday, supplies| 
+  holiday_hash[:winter].each do |holiday, supplies|
     supplies << supply
-  end 
+  end
   # holiday_hash is identical to the one above
   # add the second argument, which is a supply, to BOTH the
   # Christmas AND the New Year's arrays
@@ -49,22 +49,22 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-    holiday_hash[:winter].collect do |holiday, supplies| 
+    holiday_hash[:winter].collect do |holiday, supplies|
       supplies.flatten
-    end 
-      
-    
+    end
+
+
   # return an array of all of the supplies that are used in the winter season
 
 end
 
 def all_supplies_in_holidays(holiday_hash)
 
-  holiday_hash.each do |season, holidays| 
+  holiday_hash.each do |season, holidays|
     puts "#{season.capitalize}"
-    holidays.each do |holidays, supplies| 
+    holidays.each do |holidays, supplies|
       puts "#{holiday}: #{supplies.join(",")}"
-    end 
+    end
   end
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
